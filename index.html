@@ -1,58 +1,335 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Guillermo Hernández</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #0f172a;
-            color: #e5e7eb;
-            margin: 0;
-            padding: 40px;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-        }
-        h1 {
-            color: #38bdf8;
-        }
-        .section {
-            margin-top: 30px;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Guillermo Hernández</h1>
-        <p>Computer Science student | Aspiring Full-Stack Developer</p>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Guillermo Hernández | Portfolio</title>
 
-        <div class="section">
-            <h2>About Me</h2>
-            <p>
-                I am a student in the process of becoming a full-stack developer,
-                with strong interest in data analysis and machine learning.
+    <!-- Bootstrap CSS (CDN) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="assets/styles.css" />
+    <meta name="description" content="Guillermo Hernández — Systems & Computer Engineering student. Projects in backend, cloud architecture, and data analytics." />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top nav-glass">
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="#top">Guillermo Hernández</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+          aria-controls="nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav ms-auto gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <header id="top" class="hero-section">
+      <div class="container py-5">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7">
+            <p class="text-uppercase small text-muted mb-2">Systems & Computer Engineering Student</p>
+            <h1 class="display-5 fw-bold mb-3">
+              Building reliable software across <span class="text-gradient">backend</span>, <span class="text-gradient">cloud</span>, and <span class="text-gradient">data</span>.
+            </h1>
+            <p class="lead text-muted mb-4">
+              I’m Guillermo Hernández, a BS student at Universidad de Los Andes (Bogotá). I enjoy designing clean architectures,
+              building transactional systems, and turning data into actionable dashboards.
             </p>
-        </div>
 
-        <div class="section">
-            <h2>Technologies</h2>
-            <ul>
-                <li>Java</li>
-                <li>Python</li>
-                <li>JavaScript (ES6+)</li>
-                <li>TypeScript</li>
-                <li>SQL</li>
-                <li>HTML5 & CSS3</li>
-            </ul>
-        </div>
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-primary btn-cta" href="#portfolio">View portfolio</a>
+              <a class="btn btn-outline-light btn-cta" href="#contact">Get in touch</a>
+            </div>
 
-        <div class="section">
-            <h2>Contact</h2>
-            <p>GitHub: github.com/TU-USUARIO</p>
+            <div class="mt-4 d-flex flex-wrap gap-2">
+              <span class="badge rounded-pill badge-soft">Java</span>
+              <span class="badge rounded-pill badge-soft">Python</span>
+              <span class="badge rounded-pill badge-soft">Spring Boot</span>
+              <span class="badge rounded-pill badge-soft">Django</span>
+              <span class="badge rounded-pill badge-soft">AWS / GCP</span>
+              <span class="badge rounded-pill badge-soft">PostgreSQL / MongoDB</span>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="card hero-card shadow-lg border-0">
+              <div class="card-body p-4">
+                <h2 class="h5 fw-semibold mb-3">Quick info</h2>
+
+                <div class="d-flex justify-content-between py-2 border-bottom border-opacity">
+                  <span class="text-muted">Location</span>
+                  <span class="fw-medium">Bogotá, CO</span>
+                </div>
+                <div class="d-flex justify-content-between py-2 border-bottom border-opacity">
+                  <span class="text-muted">Education</span>
+                  <span class="fw-medium">Universidad de Los Andes</span>
+                </div>
+                <div class="d-flex justify-content-between py-2 border-bottom border-opacity">
+                  <span class="text-muted">Program</span>
+                  <span class="fw-medium">BS Systems & Computer Engineering</span>
+                </div>
+                <div class="d-flex justify-content-between py-2 border-bottom border-opacity">
+                  <span class="text-muted">GPA</span>
+                  <span class="fw-medium">4.24/5.0</span>
+                </div>
+
+                <div class="mt-3">
+                  <a
+                    class="link-light text-decoration-none"
+                    href="https://www.linkedin.com/in/guillermo-hern%C3%A1ndez-estupi%C3%B1%C3%A1n-880729357/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    LinkedIn
+                    <span class="ms-1 opacity-75">↗</span>
+                  </a>
+                  <span class="text-muted mx-2">•</span>
+                  <button id="copyEmailBtn" class="btn btn-sm btn-outline-light">
+                    Copy email
+                  </button>
+                  <div id="copyToast" class="small text-success mt-2 d-none">Email copied.</div>
+                </div>
+
+                <p class="small text-muted mt-3 mb-0">
+                  Currently focusing on scalable services, secure integrations, and analytics workflows.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-</body>
+      </div>
+    </header>
+
+    <!-- Portfolio -->
+    <main>
+      <section id="portfolio" class="section-pad">
+        <div class="container">
+          <div class="d-flex align-items-end justify-content-between flex-wrap gap-2 mb-4">
+            <div>
+              <h2 class="fw-bold mb-1">Portfolio</h2>
+              <p class="text-muted mb-0">Selected projects from coursework and applied work.</p>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <label for="portfolioFilter" class="small text-muted mb-0">Filter</label>
+              <select id="portfolioFilter" class="form-select form-select-sm w-auto">
+                <option value="all" selected>All</option>
+                <option value="backend">Backend</option>
+                <option value="architecture">Architecture</option>
+                <option value="data">Data / BI</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row g-4" id="portfolioGrid">
+            <!-- Project 1 -->
+            <div class="col-md-6 col-lg-4 portfolio-item" data-category="backend">
+              <div class="card h-100 shadow-sm card-hover border-0">
+                <div class="card-body p-4">
+                  <p class="small text-muted mb-2">Feb 2024 – May 2024</p>
+                  <h3 class="h5 fw-semibold">Transactional Banking System</h3>
+                  <p class="text-muted mb-3">
+                    Mid-scale banking system with Java Spring Boot, Oracle SQL, and MongoDB. Designed CRUD + complex rules and
+                    evaluated schema tradeoffs via workload analysis.
+                  </p>
+                  <div class="d-flex flex-wrap gap-2">
+                    <span class="badge text-bg-dark">Spring Boot</span>
+                    <span class="badge text-bg-dark">Oracle SQL</span>
+                    <span class="badge text-bg-dark">MongoDB</span>
+                    <span class="badge text-bg-dark">ACID</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="col-md-6 col-lg-4 portfolio-item" data-category="architecture">
+              <div class="card h-100 shadow-sm card-hover border-0">
+                <div class="card-body p-4">
+                  <p class="small text-muted mb-2">Jan 2025 – May 2025</p>
+                  <h3 class="h5 fw-semibold">Refractory Epilepsy Diagnostic Support System</h3>
+                  <p class="text-muted mb-3">
+                    Cloud-oriented architecture integrating EEG signals, MRI (DICOM), and miRNA biomarkers, with emphasis on
+                    scalability, availability, security, and low-latency access to large datasets.
+                  </p>
+                  <div class="d-flex flex-wrap gap-2">
+                    <span class="badge text-bg-dark">Cloud</span>
+                    <span class="badge text-bg-dark">REST</span>
+                    <span class="badge text-bg-dark">Security</span>
+                    <span class="badge text-bg-dark">Medical data</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="col-md-6 col-lg-4 portfolio-item" data-category="data">
+              <div class="card h-100 shadow-sm card-hover border-0">
+                <div class="card-body p-4">
+                  <p class="small text-muted mb-2">Oct 2025 – Dec 2025</p>
+                  <h3 class="h5 fw-semibold">Clinical & Environmental Data Analytics Dashboard</h3>
+                  <p class="text-muted mb-3">
+                    Multidisciplinary dashboards for environmental health indicators in Bogotá. Built a multidimensional model,
+                    contributed to descriptive and inferential analysis (CI, hypothesis testing), and supported interactive filtering.
+                  </p>
+                  <div class="d-flex flex-wrap gap-2">
+                    <span class="badge text-bg-dark">BI</span>
+                    <span class="badge text-bg-dark">ETL</span>
+                    <span class="badge text-bg-dark">Dimensional modeling</span>
+                    <span class="badge text-bg-dark">Statistics</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-5 opacity-25" />
+
+          <div class="row g-4">
+            <div class="col-lg-6">
+              <div class="p-4 rounded-4 soft-panel h-100">
+                <h3 class="h5 fw-semibold mb-2">What I work with</h3>
+                <p class="text-muted mb-3">
+                  Java, Python, JavaScript/TypeScript, SQL; React, Angular, Flask, Django, Spring Boot; Docker; AWS, GCP, Azure DevOps.
+                </p>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="chip">Backend</span>
+                  <span class="chip">Cloud</span>
+                  <span class="chip">Databases</span>
+                  <span class="chip">ML / Analytics</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="p-4 rounded-4 soft-panel h-100">
+                <h3 class="h5 fw-semibold mb-2">Education snapshot</h3>
+                <p class="text-muted mb-3">
+                  Universidad de Los Andes — BS in Systems and Computer Engineering, Minor in Portuguese Language and Culture
+                  (Aug 2022 – Jun 2026).
+                </p>
+                <p class="text-muted mb-0">
+                  Featured areas: transactional systems, algorithms, software architecture, cloud-native development, security, and BI.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="section-pad section-alt">
+        <div class="container">
+          <div class="row g-4 align-items-start">
+            <div class="col-lg-7">
+              <h2 class="fw-bold mb-3">About</h2>
+              <p class="text-muted">
+                I’m a systems and computer engineering student with a strong interest in building robust services and designing architectures
+                that stay reliable under real-world constraints. I’m comfortable moving from data modeling and backend design to cloud deployment
+                and analytics deliverables.
+              </p>
+              <p class="text-muted mb-0">
+                If you’re looking for someone who can execute cleanly, communicate clearly, and iterate fast with a team, I’d be happy to connect.
+              </p>
+            </div>
+
+            <div class="col-lg-5">
+              <div class="card border-0 shadow-sm rounded-4">
+                <div class="card-body p-4">
+                  <h3 class="h6 text-muted text-uppercase mb-3">Languages</h3>
+                  <ul class="list-unstyled mb-0">
+                    <li class="d-flex justify-content-between py-2 border-bottom">
+                      <span>Spanish</span><span class="text-muted">Native</span>
+                    </li>
+                    <li class="d-flex justify-content-between py-2 border-bottom">
+                      <span>English</span><span class="text-muted">Upper-intermediate</span>
+                    </li>
+                    <li class="d-flex justify-content-between py-2 border-bottom">
+                      <span>French</span><span class="text-muted">Intermediate (B1.5)</span>
+                    </li>
+                    <li class="d-flex justify-content-between py-2">
+                      <span>Portuguese</span><span class="text-muted">Upper-intermediate</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <p class="small text-muted mt-3 mb-0">
+                Note: You can later add a CV PDF link or GitHub repos for each project without changing the layout.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section-pad">
+        <div class="container">
+          <div class="row g-4 align-items-center">
+            <div class="col-lg-7">
+              <h2 class="fw-bold mb-2">Contact</h2>
+              <p class="text-muted mb-0">
+                Best way to reach me: email. You can also find me on LinkedIn.
+              </p>
+            </div>
+            <div class="col-lg-5">
+              <div class="d-flex flex-wrap gap-2 justify-content-lg-end">
+                <a class="btn btn-primary btn-cta" href="mailto:guillermoj.heres@gmail.com">Email me</a>
+                <a
+                  class="btn btn-outline-secondary btn-cta"
+                  href="https://www.linkedin.com/in/guillermo-hern%C3%A1ndez-estupi%C3%B1%C3%A1n-880729357/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  LinkedIn
+                </a>
+              </div>
+              <p class="small text-muted mt-2 mb-0 text-lg-end">
+                Bogotá, Colombia • +57 315 536 7141
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-4 border-top border-opacity">
+      <div class="container d-flex flex-wrap gap-2 justify-content-between align-items-center">
+        <p class="mb-0 small text-muted">© <span id="year"></span> Guillermo Hernández</p>
+        <a class="small link-light text-decoration-none" href="#top">Back to top</a>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS (CDN) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="assets/script.js"></script>
+  </body>
 </html>
