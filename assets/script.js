@@ -1,41 +1,32 @@
-(function () {
-  // Footer year
-  const yearEl = document.getElementById("year");
-  if (yearEl) yearEl.textContent = new Date().getFullYear();
+// Año en el footer
+document.getElementById("year").textContent = new Date().getFullYear();
 
-  // Copy email button
-  const email = "guillermoj.heres@gmail.com";
-  const copyBtn = document.getElementById("copyEmailBtn");
-  const toast = document.getElementById("copyToast");
+// Reveal on scroll (simple y ligero)
+const revealEls = document.querySelectorAll(".reveal");
 
-  if (copyBtn) {
-    copyBtn.addEventListener("click", async () => {
-      try {
-        await navigator.clipboard.writeText(email);
-        if (toast) {
-          toast.classList.remove("d-none");
-          setTimeout(() => toast.classList.add("d-none"), 1400);
-        }
-      } catch (e) {
-        // Fallback: prompt
-        window.prompt("Copy email:", email);
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
       }
     });
-  }
+  },
+  { threshold: 0.12 }
+);
 
-  // Portfolio filter
-  const filter = document.getElementById("portfolioFilter");
-  const items = Array.from(document.querySelectorAll(".portfolio-item"));
+revealEls.forEach((el) => observer.observe(el));
 
-  function applyFilter(value) {
-    items.forEach((item) => {
-      const cat = item.getAttribute("data-category");
-      const show = value === "all" || value === cat;
-      item.classList.toggle("d-none", !show);
-    });
-  }
+// Cerrar navbar en móvil al hacer click
+const navLinks = document.querySelectorAll("#navLinks .nav-link");
+const navCollapse = document.getElementById("navLinks");
 
-  if (filter) {
-    filter.addEventListener("change", (e) => applyFilter(e.target.value));
-  }
-})();
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    if (navCollapse.classList.contains("show")) {
+      const bsCollapse = bootstrap.Collapse.getOrCreateInstance(navCollapse);
+      bsCollapse.hide();
+    }
+  });
+});
