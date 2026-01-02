@@ -1,7 +1,6 @@
-// Año en el footer
 document.getElementById("year").textContent = new Date().getFullYear();
 
-// Reveal on scroll (simple y ligero)
+
 const revealEls = document.querySelectorAll(".reveal");
 
 const observer = new IntersectionObserver(
@@ -18,7 +17,7 @@ const observer = new IntersectionObserver(
 
 revealEls.forEach((el) => observer.observe(el));
 
-// Cerrar navbar en móvil al hacer click
+
 const navLinks = document.querySelectorAll("#navLinks .nav-link");
 const navCollapse = document.getElementById("navLinks");
 

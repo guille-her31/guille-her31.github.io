@@ -150,7 +150,7 @@ body {
   box-shadow: var(--shadow);
 }
 
-/* Reveal animation */
+
 .reveal {
   opacity: 0;
   transform: translateY(10px);
@@ -162,7 +162,7 @@ body {
   transform: translateY(0);
 }
 
-/* Reduce motion preference */
+
 @media (prefers-reduced-motion: reduce) {
   .reveal {
     opacity: 1;
