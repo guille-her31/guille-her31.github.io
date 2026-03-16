@@ -152,11 +152,15 @@
 
         <div class="col-12 col-md-6 col-lg-4">
           <div class="interest-card reveal">
-            <div class="icon-wrap"><i class="bi bi-controller"></i></div>
-            <h3 class="h5 fw-semibold mt-3">Videojuegos</h3>
-            <p class="text-muted mb-0">Me gusta conectar software, UX y datos para crear experiencias interactivas y medibles.</p>
+            <div class="icon-wrap"><i class="bi bi-bank"></i></div>
+            <h3 class="h5 fw-semibold mt-3">Tecnología financiera</h3>
+            <p class="text-muted mb-0">
+              Interés en sistemas financieros digitales, arquitectura de plataformas bancarias
+               y analítica de datos aplicada al sector fintech.
+            </p>
           </div>
         </div>
+
       </div>
     </div>
   </section>
@@ -169,102 +173,187 @@
         <p class="text-muted mb-0">Una selección breve de trabajos recientes.</p>
       </div>
 
-      <div class="row g-4">
-        <!-- Proyecto 1 -->
-        <div class="col-12 col-md-6 col-lg-4">
-          <article class="project-card reveal">
-            <div class="project-thumb">
-              <img
-                src="images/proyecto-1.jpg"
-                alt="Imagen proyecto 1 (placeholder)"
-                onerror="this.style.display='none'; this.parentElement.classList.add('thumb-empty');"
-              />
-              <div class="thumb-fallback">
-                <p class="mb-0 small text-muted">Imagen: images/proyecto-1.jpg</p>
+      <div id="projectsCarousel" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-inner">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="row g-4">
+
+              <!-- Proyecto 1: Goatly -->
+              <div class="col-12 col-md-6">
+                <a
+                  href="https://github.com/Moviles202620/Wiki/wiki"
+                  target="_blank"
+                  rel="noopener"
+                  class="project-link"
+                >
+                  <article class="project-card reveal h-100">
+                    <div class="project-thumb">
+                      <img
+                        src="images/proyecto-4.jpg"
+                        alt="Imagen proyecto Goatly"
+                        onerror="this.style.display='none'; this.parentElement.classList.add('thumb-empty');"
+                      />
+                      <div class="thumb-fallback">
+                        <p class="mb-0 small text-muted">Imagen: images/proyecto-4.jpg</p>
+                      </div>
+                    </div>
+
+                    <div class="p-3">
+                      <p class="small text-muted mb-1">2026</p>
+                      <h3 class="h5 fw-semibold mb-2">Goatly – Ocasional Jobs Platform</h3>
+                      <p class="text-muted mb-3">
+                        Aplicación móvil centralizada para gestionar vacantes ocasionales en UniAndes.
+                        Reúne ofertas en un solo lugar, permite crear un perfil profesional digital,
+                        postularse en un clic, entre otras cosas optimizando todo el proceso que se lleva actualmente.
+                      </p>
+                      <div class="d-flex flex-wrap gap-2">
+                        <span class="tag">Mobile App</span>
+                        <span class="tag">UX</span>
+                        <span class="tag">Analytics</span>
+                      </div>
+                    </div>
+                  </article>
+                </a>
               </div>
-            </div>
-            <div class="p-3">
-              <p class="small text-muted mb-1">Feb 2024 – May 2024</p>
-              <h3 class="h5 fw-semibold mb-2">Transactional Banking System</h3>
-              <p class="text-muted mb-3">
-                Sistema bancario en Java Spring Boot con Oracle SQL y MongoDB, CRUD completo, reglas de negocio y concurrencia
-                (aislamientos y anomalías).
-              </p>
-              <div class="d-flex flex-wrap gap-2">
-                <span class="tag">Spring Boot</span>
-                <span class="tag">Oracle SQL</span>
-                <span class="tag">MongoDB</span>
+
+              <!-- Proyecto 2: MediAlpes -->
+              <div class="col-12 col-md-6">
+                <a
+                  href="https://github.com/guille-her31/MediAlpes-Analytics-Dashboard"
+                  target="_blank"
+                  rel="noopener"
+                  class="project-link"
+                >
+                  <article class="project-card reveal h-100">
+                    <div class="project-thumb">
+                      <img
+                        src="images/proyecto-3.jpg"
+                        alt="Imagen proyecto 3"
+                        onerror="this.style.display='none'; this.parentElement.classList.add('thumb-empty');"
+                      />
+                      <div class="thumb-fallback">
+                        <p class="mb-0 small text-muted">Imagen: images/proyecto-3.jpg</p>
+                      </div>
+                    </div>
+
+                    <div class="p-3">
+                      <p class="small text-muted mb-1">Oct 2025 – Dec 2025</p>
+                      <h3 class="h5 fw-semibold mb-2">Clinical & Environmental Analytics Dashboard</h3>
+                      <p class="text-muted mb-3">
+                        Dashboards para indicadores de salud ambiental en Bogotá, con modelo multidimensional,
+                        ETL y analítica descriptiva e inferencial con parámetros configurables.
+                      </p>
+                      <div class="d-flex flex-wrap gap-2">
+                        <span class="tag">BI</span>
+                        <span class="tag">ETL</span>
+                        <span class="tag">Dashboards</span>
+                      </div>
+                    </div>
+                  </article>
+                </a>
               </div>
+
             </div>
-          </article>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="row g-4">
+
+              <!-- Proyecto 3 -->
+              <div class="col-12 col-md-6">
+                <article class="project-card reveal h-100">
+                  <div class="project-thumb">
+                    <img
+                      src="images/proyecto-2.jpg"
+                      alt="Imagen proyecto 2"
+                      onerror="this.style.display='none'; this.parentElement.classList.add('thumb-empty');"
+                    />
+                    <div class="thumb-fallback">
+                      <p class="mb-0 small text-muted">Imagen: images/proyecto-2.jpg</p>
+                    </div>
+                  </div>
+                  <div class="p-3">
+                    <p class="small text-muted mb-1">Jan 2025 – May 2025</p>
+                    <h3 class="h5 fw-semibold mb-2">Refractory Epilepsy Diagnostic Support</h3>
+                    <p class="text-muted mb-3">
+                      Arquitectura cloud para integrar EEG y MRI ,
+                      priorizando escalabilidad, disponibilidad y seguridad. 
+                      El sistema permite centralizar información clínica para facilitar el análisis
+                      y apoyar la toma de decisiones en el diagnóstico de epilepsia refractaria.
+                    </p>
+                    <div class="d-flex flex-wrap gap-2">
+                      <span class="tag">Arquitectura</span>
+                      <span class="tag">Cloud</span>
+                      <span class="tag">Seguridad</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Proyecto 4 -->
+              <div class="col-12 col-md-6">
+                <article class="project-card reveal h-100">
+                  <div class="project-thumb">
+                    <img
+                      src="images/proyecto-1.jpg"
+                      alt="Imagen proyecto 1"
+                      onerror="this.style.display='none'; this.parentElement.classList.add('thumb-empty');"
+                    />
+                    <div class="thumb-fallback">
+                      <p class="mb-0 small text-muted">Imagen: images/proyecto-1.jpg</p>
+                    </div>
+                  </div>
+                  <div class="p-3">
+                    <p class="small text-muted mb-1">Feb 2024 – May 2024</p>
+                    <h3 class="h5 fw-semibold mb-2">Transactional Banking System</h3>
+                    <p class="text-muted mb-3">
+                      Sistema bancario en Java Spring Boot con Oracle SQL y MongoDB, CRUD completo,
+                      reglas de negocio y concurrencia (aislamientos y anomalías). Incluye manejo de transacciones, 
+                      y simulación de operaciones financieras en un entorno distribuido.
+                    </p>
+                    <div class="d-flex flex-wrap gap-2">
+                      <span class="tag">Spring Boot</span>
+                      <span class="tag">Oracle SQL</span>
+                      <span class="tag">MongoDB</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+            </div>
+          </div>
+
         </div>
 
-        <!-- Proyecto 2 -->
-        <div class="col-12 col-md-6 col-lg-4">
-          <article class="project-card reveal">
-            <div class="project-thumb">
-              <img
-                src="images/proyecto-2.jpg"
-                alt="Imagen proyecto 2 (placeholder)"
-                onerror="this.style.display='none'; this.parentElement.classList.add('thumb-empty');"
-              />
-              <div class="thumb-fallback">
-                <p class="mb-0 small text-muted">Imagen: images/proyecto-2.jpg</p>
-              </div>
-            </div>
-            <div class="p-3">
-              <p class="small text-muted mb-1">Jan 2025 – May 2025</p>
-              <h3 class="h5 fw-semibold mb-2">Refractory Epilepsy Diagnostic Support</h3>
-              <p class="text-muted mb-3">
-                Arquitectura cloud para integrar EEG, MRI (DICOM) y biomarcadores, priorizando escalabilidad, disponibilidad,
-                seguridad y baja latencia en datos médicos.
-              </p>
-              <div class="d-flex flex-wrap gap-2">
-                <span class="tag">Arquitectura</span>
-                <span class="tag">Cloud</span>
-                <span class="tag">Seguridad</span>
-              </div>
-            </div>
-          </article>
-        </div>
+        <!-- Controles -->
+        <div class="d-flex justify-content-center gap-2 mt-4">
+          <button
+            class="btn btn-dark btn-sm"
+            type="button"
+            data-bs-target="#projectsCarousel"
+            data-bs-slide="prev"
+          >
+            <i class="bi bi-arrow-left"></i>
+          </button>
 
-        <!-- Proyecto 3 -->
-        <div class="col-12 col-md-6 col-lg-4">
-          <article class="project-card reveal">
-            <div class="project-thumb">
-              <img
-                src="images/proyecto-3.jpg"
-                alt="Imagen proyecto 3 (placeholder)"
-                onerror="this.style.display='none'; this.parentElement.classList.add('thumb-empty');"
-              />
-              <div class="thumb-fallback">
-                <p class="mb-0 small text-muted">Imagen: images/proyecto-3.jpg</p>
-              </div>
-            </div>
-            <div class="p-3">
-              <p class="small text-muted mb-1">Oct 2025 – Dec 2025</p>
-              <h3 class="h5 fw-semibold mb-2">Clinical & Environmental Analytics Dashboard</h3>
-              <p class="text-muted mb-3">
-                Dashboards para indicadores de salud ambiental en Bogotá, con modelo multidimensional, ETL y analítica
-                descriptiva e inferencial con parámetros configurables.
-              </p>
-              <div class="d-flex flex-wrap gap-2">
-                <span class="tag">BI</span>
-                <span class="tag">ETL</span>
-                <span class="tag">Dashboards</span>
-              </div>
-            </div>
-          </article>
+          <button
+            class="btn btn-dark btn-sm"
+            type="button"
+            data-bs-target="#projectsCarousel"
+            data-bs-slide="next"
+          >
+            <i class="bi bi-arrow-right"></i>
+          </button>
         </div>
-      </div>
-
-      <div class="text-center mt-5">
-        <p class="text-muted mb-0 small">
-          
-        </p>
       </div>
     </div>
   </section>
+
+
+
 
   <!-- CONTACTO -->
   <section id="contacto" class="section-pad section-soft">
@@ -285,7 +374,7 @@
             <a class="btn btn-dark" href="mailto:guillermoj.heres@gmail.com?subject=Contacto%20desde%20portafolio">
               <i class="bi bi-envelope me-2"></i>Enviar email
             </a>
-            <a class="btn btn-outline-dark" href="https://www.linkedin.com/in/guillermo-hern%C3%A1ndez-estupi%C3%B1%C3%A1n-880729357/" target="_blank" rel="noopener">
+            <a class="btn btn-outline-dark" href="https://www.linkedin.com/in/guillermoj-heres/" target="_blank" rel="noopener">
               <i class="bi bi-linkedin me-2"></i>LinkedIn
             </a>
           </div>
