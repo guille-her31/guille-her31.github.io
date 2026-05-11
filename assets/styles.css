@@ -193,6 +193,38 @@ body {
   align-items: stretch;
 }
 
+/* ── Stack tecnológico ───────────────────────────────────────────────────── */
+.stack-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(76px, 1fr));
+  gap: 28px 16px;
+  justify-items: center;
+}
+
+.stack-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.stack-item img {
+  width: 42px;
+  height: 42px;
+  transition: transform 0.2s ease;
+}
+
+.stack-item:hover img {
+  transform: scale(1.18);
+}
+
+.stack-item span {
+  font-size: 11px;
+  font-weight: 500;
+  color: rgba(0,0,0,.6);
+  text-align: center;
+}
+
 /* ── Dark mode ───────────────────────────────────────────────────────────── */
 [data-theme="dark"] {
   --soft: #1c1d21;
@@ -256,6 +288,10 @@ body {
 
 [data-theme="dark"] .photo-fallback {
   color: rgba(255,255,255,.5);
+}
+
+[data-theme="dark"] .stack-item span {
+  color: rgba(255,255,255,.55);
 }
 
 [data-theme="dark"] .btn-dark {

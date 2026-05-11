@@ -60,6 +60,8 @@ const T = {
     "interests.quantum.desc": "Interés en Qiskit y Pennylane, con énfasis en información cuántica y criptografía.",
     "interests.fintech.title": "Tecnología financiera",
     "interests.fintech.desc": "Interés en sistemas financieros digitales, arquitectura de plataformas bancarias y analítica de datos aplicada al sector fintech.",
+    "stack.title": "Stack tecnológico",
+    "stack.subtitle": "Herramientas y lenguajes con los que trabajo.",
     "projects.title": "Proyectos",
     "projects.subtitle": "Una selección breve de trabajos recientes.",
     "project.microai.title": "MicroAI – Agente IA para Microcrédito",
@@ -101,6 +103,8 @@ const T = {
     "interests.quantum.desc": "Interest in Qiskit and Pennylane, with emphasis on quantum information and cryptography.",
     "interests.fintech.title": "Financial Technology",
     "interests.fintech.desc": "Interest in digital financial systems, banking platform architecture and data analytics applied to the fintech sector.",
+    "stack.title": "Tech stack",
+    "stack.subtitle": "Tools and languages I work with.",
     "projects.title": "Projects",
     "projects.subtitle": "A brief selection of recent work.",
     "project.microai.title": "MicroAI – AI Agent for Microcredit",
@@ -130,6 +134,10 @@ function applyLang(l) {
   document.querySelectorAll("[data-i18n-label]").forEach(el => {
     const key = el.dataset.i18nLabel;
     if (T[l][key] !== undefined) el.setAttribute("aria-label", T[l][key]);
+  });
+  document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+    const key = el.dataset.i18nPlaceholder;
+    if (T[l][key] !== undefined) el.setAttribute("placeholder", T[l][key]);
   });
   const btn = document.getElementById("langToggle");
   btn.textContent = l === "es" ? "EN" : "ES";
