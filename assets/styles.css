@@ -192,3 +192,97 @@ body {
 .carousel-item .row {
   align-items: stretch;
 }
+
+/* ── Dark mode ───────────────────────────────────────────────────────────── */
+[data-theme="dark"] {
+  --soft: #1c1d21;
+  --card: #25262b;
+  --border: rgba(255,255,255,.09);
+  --shadow: 0 10px 30px rgba(0,0,0,.35);
+}
+
+[data-theme="dark"] body {
+  color: #e2e2e5;
+  background: #141416;
+}
+
+[data-theme="dark"] #mainNav {
+  background: #1c1d21 !important;
+  border-color: rgba(255,255,255,.08) !important;
+}
+
+[data-theme="dark"] .navbar-brand,
+[data-theme="dark"] .nav-link {
+  color: rgba(255,255,255,.85) !important;
+}
+
+[data-theme="dark"] .nav-link.active {
+  color: #fff !important;
+}
+
+[data-theme="dark"] .navbar-toggler {
+  border-color: rgba(255,255,255,.25);
+}
+
+[data-theme="dark"] .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255%2c255%2c255%2c0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+[data-theme="dark"] .text-muted {
+  color: rgba(255,255,255,.5) !important;
+}
+
+[data-theme="dark"] .icon-wrap {
+  background: #1c1d21;
+}
+
+[data-theme="dark"] .icon-wrap i {
+  color: #e2e2e5;
+}
+
+[data-theme="dark"] .tag {
+  background: #1c1d21;
+  color: rgba(255,255,255,.75);
+}
+
+[data-theme="dark"] .thumb-fallback {
+  background: #25262b;
+  color: rgba(255,255,255,.5);
+}
+
+[data-theme="dark"] .project-thumb {
+  background: #25262b;
+}
+
+[data-theme="dark"] .photo-fallback {
+  color: rgba(255,255,255,.5);
+}
+
+[data-theme="dark"] .btn-dark {
+  background: #e2e2e5;
+  border-color: #e2e2e5;
+  color: #141416;
+}
+
+[data-theme="dark"] .btn-dark:hover {
+  background: #fff;
+  border-color: #fff;
+  color: #141416;
+}
+
+[data-theme="dark"] .btn-outline-dark {
+  border-color: rgba(255,255,255,.4);
+  color: #e2e2e5;
+}
+
+[data-theme="dark"] .btn-outline-dark:hover {
+  background: rgba(255,255,255,.1);
+  border-color: rgba(255,255,255,.6);
+  color: #fff;
+}
+
+[data-theme="dark"] .badge.text-bg-light {
+  background: #25262b !important;
+  color: #e2e2e5 !important;
+  border-color: rgba(255,255,255,.1) !important;
+}

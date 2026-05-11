@@ -27,18 +27,23 @@
     <div class="container">
       <a class="navbar-brand fw-semibold" href="#home">Guillermo Hernández</a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks" aria-controls="navLinks" aria-expanded="false" aria-label="Abrir menú">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks" aria-controls="navLinks" aria-expanded="false" aria-label="Abrir menú" data-i18n-label="nav.toggler">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div id="navLinks" class="collapse navbar-collapse">
         <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-          <li class="nav-item"><a class="nav-link" href="#home">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#intereses">Intereses</a></li>
-          
-          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="#home" data-i18n="nav.home">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#intereses" data-i18n="nav.interests">Intereses</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto" data-i18n="nav.contact">Contacto</a></li>
           <li class="nav-item ms-lg-2">
-            <a class="btn btn-outline-dark btn-sm" href="#proyectos">Ver portafolio</a>
+            <a class="btn btn-outline-dark btn-sm" href="#proyectos" data-i18n="nav.portfolio">Ver portafolio</a>
+          </li>
+          <li class="nav-item d-flex align-items-center gap-1 ms-lg-1">
+            <button id="langToggle" class="btn btn-outline-dark btn-sm" style="min-width:2.4rem" title="Switch to English">EN</button>
+            <button id="themeToggle" class="btn btn-outline-dark btn-sm" aria-label="Cambiar tema" data-i18n-label="nav.theme">
+              <i class="bi bi-moon"></i>
+            </button>
           </li>
         </ul>
       </div>
@@ -51,10 +56,10 @@
       <div class="row align-items-center g-4">
         <div class="col-12 col-lg-7">
           <p class="text-uppercase small text-muted mb-2"></p>
-          <h1 class="display-5 fw-bold mb-3">¡Hola!</h1>
+          <h1 class="display-5 fw-bold mb-3" data-i18n="hero.greeting">¡Hola!</h1>
 
-          <p class="lead text-muted mb-4">
-            Soy estudiante de Ingeniería de Sistemas y Computación en la Universidad de los Andes (Bogotá). Busco oportunidades en el mundo laboral para seguir 
+          <p class="lead text-muted mb-4" data-i18n="hero.bio">
+            Soy estudiante de Ingeniería de Sistemas y Computación en la Universidad de los Andes (Bogotá). Busco oportunidades en el mundo laboral para seguir
             con mi aprendizaje y poder aportar en equipos que ayuden a cambiar el mundo.
           </p>
 
@@ -66,8 +71,8 @@
           </div>
 
           <div class="d-flex flex-wrap gap-2">
-            <a class="btn btn-dark" href="#contacto">Contactarme</a>
-            <a class="btn btn-outline-dark" href="#proyectos">Ver proyectos</a>
+            <a class="btn btn-dark" href="#contacto" data-i18n="hero.contact-btn">Contactarme</a>
+            <a class="btn btn-outline-dark" href="#proyectos" data-i18n="hero.projects-btn">Ver proyectos</a>
           </div>
         </div>
 
@@ -89,7 +94,7 @@
             </div>
           </div>
 
-          <div class="mt-3 text-muted small">
+          <div class="mt-3 text-muted small" data-i18n="hero.tech">
             Tecnologías: Docker, AWS (Lambda, SageMaker, API Gateway), GCP (Compute Engine, Cloud Run), Azure DevOps, PostgreSQL, MongoDB.
           </div>
         </div>
@@ -101,60 +106,59 @@
   <section id="intereses" class="section-pad section-soft">
     <div class="container">
       <div class="text-center mb-5">
-        <h2 class="fw-bold mb-2">Áreas de interés</h2>
-        <p class="text-muted mb-0">Algunas de las cosas en las que disfruto trabajar.</p>
+        <h2 class="fw-bold mb-2" data-i18n="interests.title">Áreas de interés</h2>
+        <p class="text-muted mb-0" data-i18n="interests.subtitle">Algunas de las cosas en las que disfruto trabajar.</p>
       </div>
 
       <div class="row g-4">
         <div class="col-12 col-md-6 col-lg-4">
           <div class="interest-card reveal">
             <div class="icon-wrap"><i class="bi bi-cpu"></i></div>
-            <h3 class="h5 fw-semibold mt-3">Machine Learning</h3>
-            <p class="text-muted mb-0">Modelado, evaluación y despliegue de modelos con PyTorch y scikit-learn.</p>
+            <h3 class="h5 fw-semibold mt-3" data-i18n="interests.ml.title">Machine Learning</h3>
+            <p class="text-muted mb-0" data-i18n="interests.ml.desc">Modelado, evaluación y despliegue de modelos con PyTorch y scikit-learn.</p>
           </div>
         </div>
 
         <div class="col-12 col-md-6 col-lg-4">
           <div class="interest-card reveal">
             <div class="icon-wrap"><i class="bi bi-graph-up"></i></div>
-            <h3 class="h5 fw-semibold mt-3">Análisis de datos</h3>
-            <p class="text-muted mb-0">Dashboards, estadística aplicada e inferencia (intervalos de confianza, pruebas de hipótesis).</p>
+            <h3 class="h5 fw-semibold mt-3" data-i18n="interests.data.title">Análisis de datos</h3>
+            <p class="text-muted mb-0" data-i18n="interests.data.desc">Dashboards, estadística aplicada e inferencia (intervalos de confianza, pruebas de hipótesis).</p>
           </div>
         </div>
 
         <div class="col-12 col-md-6 col-lg-4">
           <div class="interest-card reveal">
             <div class="icon-wrap"><i class="bi bi-window"></i></div>
-            <h3 class="h5 fw-semibold mt-3">Frontend</h3>
-            <p class="text-muted mb-0">Interfaces limpias y responsivas con HTML, CSS, Bootstrap, React y Angular.</p>
+            <h3 class="h5 fw-semibold mt-3" data-i18n="interests.frontend.title">Frontend</h3>
+            <p class="text-muted mb-0" data-i18n="interests.frontend.desc">Interfaces limpias y responsivas con HTML, CSS, Bootstrap, React y Angular.</p>
           </div>
         </div>
 
         <div class="col-12 col-md-6 col-lg-4">
           <div class="interest-card reveal">
             <div class="icon-wrap"><i class="bi bi-kanban"></i></div>
-            <h3 class="h5 fw-semibold mt-3">Gerencia de proyectos</h3>
-            <p class="text-muted mb-0">
+            <h3 class="h5 fw-semibold mt-3" data-i18n="interests.pm.title">Gerencia de proyectos</h3>
+            <p class="text-muted mb-0" data-i18n="interests.pm.desc">
               Planeación, coordinación y seguimiento de proyectos tecnológicos usando enfoques ágiles,
               gestión de riesgos y trabajo colaborativo.
             </p>
           </div>
         </div>
 
-
         <div class="col-12 col-md-6 col-lg-4">
           <div class="interest-card reveal">
             <div class="icon-wrap"><i class="bi bi-diagram-3"></i></div>
-            <h3 class="h5 fw-semibold mt-3">Computación cuántica</h3>
-            <p class="text-muted mb-0">Interés en Qiskit y Pennylane, con énfasis en información cuántica y criptografía.</p>
+            <h3 class="h5 fw-semibold mt-3" data-i18n="interests.quantum.title">Computación cuántica</h3>
+            <p class="text-muted mb-0" data-i18n="interests.quantum.desc">Interés en Qiskit y Pennylane, con énfasis en información cuántica y criptografía.</p>
           </div>
         </div>
 
         <div class="col-12 col-md-6 col-lg-4">
           <div class="interest-card reveal">
             <div class="icon-wrap"><i class="bi bi-bank"></i></div>
-            <h3 class="h5 fw-semibold mt-3">Tecnología financiera</h3>
-            <p class="text-muted mb-0">
+            <h3 class="h5 fw-semibold mt-3" data-i18n="interests.fintech.title">Tecnología financiera</h3>
+            <p class="text-muted mb-0" data-i18n="interests.fintech.desc">
               Interés en sistemas financieros digitales, arquitectura de plataformas bancarias
                y analítica de datos aplicada al sector fintech.
             </p>
@@ -169,18 +173,56 @@
   <section id="proyectos" class="section-pad">
     <div class="container">
       <div class="text-center mb-5">
-        <h2 class="fw-bold mb-2">Proyectos</h2>
-        <p class="text-muted mb-0">Una selección breve de trabajos recientes.</p>
+        <h2 class="fw-bold mb-2" data-i18n="projects.title">Proyectos</h2>
+        <p class="text-muted mb-0" data-i18n="projects.subtitle">Una selección breve de trabajos recientes.</p>
       </div>
 
-      <div id="projectsCarousel" class="carousel slide" data-bs-ride="false">
+      <div id="projectsCarousel" class="carousel slide" data-bs-ride="false" data-bs-wrap="false">
         <div class="carousel-inner">
 
           <!-- Slide 1 -->
           <div class="carousel-item active">
             <div class="row g-4">
 
-              <!-- Proyecto 1: Goatly -->
+              <!-- Proyecto 1: MicroAI -->
+              <div class="col-12 col-md-6">
+                <a
+                  href="https://github.com/ghernandeze/microAI"
+                  target="_blank"
+                  rel="noopener"
+                  class="project-link"
+                >
+                  <article class="project-card reveal h-100">
+                    <div class="project-thumb">
+                      <img
+                        src="images/proyecto-5.jpg"
+                        alt="Imagen proyecto MicroAI"
+                        onerror="this.style.display='none'; this.parentElement.classList.add('thumb-empty');"
+                      />
+                      <div class="thumb-fallback">
+                        <p class="mb-0 small text-muted">Imagen: images/proyecto-5.jpg</p>
+                      </div>
+                    </div>
+
+                    <div class="p-3">
+                      <p class="small text-muted mb-1">Jan 2026 – May 2026</p>
+                      <h3 class="h5 fw-semibold mb-2" data-i18n="project.microai.title">MicroAI – Agente IA para Microcrédito</h3>
+                      <p class="text-muted mb-3">
+                        Agente de IA conversacional para apoyar la toma de decisiones sobre el despliegue estratégico
+                        de microcrédito digital en Colombia. Integra análisis de datos,
+                        índice de oportunidad multidimensional, mapas coropléticos interactivos y búsqueda web.
+                      </p>
+                      <div class="d-flex flex-wrap gap-2">
+                        <span class="tag">AI Agent</span>
+                        <span class="tag">Streamlit</span>
+                        <span class="tag">Python</span>
+                      </div>
+                    </div>
+                  </article>
+                </a>
+              </div>
+
+              <!-- Proyecto 2: Goatly -->
               <div class="col-12 col-md-6">
                 <a
                   href="https://github.com/Moviles202620/Wiki/wiki"
@@ -196,14 +238,14 @@
                         onerror="this.style.display='none'; this.parentElement.classList.add('thumb-empty');"
                       />
                       <div class="thumb-fallback">
-                        <p class="mb-0 small text-muted">Imagen: images/proyecto-4.png</p>
+                        <p class="mb-0 small text-muted">Imagen: images/proyecto-4.jpg</p>
                       </div>
                     </div>
 
                     <div class="p-3">
-                      <p class="small text-muted mb-1">2026</p>
-                      <h3 class="h5 fw-semibold mb-2">Goatly – Ocasional Jobs Platform</h3>
-                      <p class="text-muted mb-3">
+                      <p class="small text-muted mb-1">Jan 2026 – May 2026</p>
+                      <h3 class="h5 fw-semibold mb-2" data-i18n="project.goatly.title">Goatly – Ocasional Jobs Platform</h3>
+                      <p class="text-muted mb-3" data-i18n="project.goatly.desc">
                         Aplicación móvil centralizada para gestionar vacantes ocasionales en UniAndes.
                         Reúne ofertas en un solo lugar, permite crear un perfil profesional digital,
                         postularse en un clic, entre otras cosas optimizando todo el proceso que se lleva actualmente.
@@ -218,7 +260,14 @@
                 </a>
               </div>
 
-              <!-- Proyecto 2: MediAlpes -->
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="row g-4">
+
+              <!-- Proyecto 3: MediAlpes -->
               <div class="col-12 col-md-6">
                 <a
                   href="https://github.com/guille-her31/MediAlpes-Analytics-Dashboard"
@@ -240,8 +289,8 @@
 
                     <div class="p-3">
                       <p class="small text-muted mb-1">Oct 2025 – Dec 2025</p>
-                      <h3 class="h5 fw-semibold mb-2">Clinical & Environmental Analytics Dashboard</h3>
-                      <p class="text-muted mb-3">
+                      <h3 class="h5 fw-semibold mb-2" data-i18n="project.medialpes.title">Clinical & Environmental Analytics Dashboard</h3>
+                      <p class="text-muted mb-3" data-i18n="project.medialpes.desc">
                         Dashboards para indicadores de salud ambiental en Bogotá, con modelo multidimensional,
                         ETL y analítica descriptiva e inferencial con parámetros configurables.
                       </p>
@@ -255,14 +304,7 @@
                 </a>
               </div>
 
-            </div>
-          </div>
-
-          <!-- Slide 2 -->
-          <div class="carousel-item">
-            <div class="row g-4">
-
-              <!-- Proyecto 3 -->
+              <!-- Proyecto 4: Epilepsy -->
               <div class="col-12 col-md-6">
                 <article class="project-card reveal h-100">
                   <div class="project-thumb">
@@ -277,10 +319,10 @@
                   </div>
                   <div class="p-3">
                     <p class="small text-muted mb-1">Jan 2025 – May 2025</p>
-                    <h3 class="h5 fw-semibold mb-2">Refractory Epilepsy Diagnostic Support</h3>
-                    <p class="text-muted mb-3">
-                      Arquitectura cloud para integrar EEG y MRI ,
-                      priorizando escalabilidad, disponibilidad y seguridad. 
+                    <h3 class="h5 fw-semibold mb-2" data-i18n="project.epilepsy.title">Refractory Epilepsy Diagnostic Support</h3>
+                    <p class="text-muted mb-3" data-i18n="project.epilepsy.desc">
+                      Arquitectura cloud para integrar EEG y MRI,
+                      priorizando escalabilidad, disponibilidad y seguridad.
                       El sistema permite centralizar información clínica para facilitar el análisis
                       y apoyar la toma de decisiones en el diagnóstico de epilepsia refractaria.
                     </p>
@@ -293,7 +335,14 @@
                 </article>
               </div>
 
-              <!-- Proyecto 4 -->
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <div class="row g-4">
+
+              <!-- Proyecto 5: Banking -->
               <div class="col-12 col-md-6">
                 <article class="project-card reveal h-100">
                   <div class="project-thumb">
@@ -308,10 +357,10 @@
                   </div>
                   <div class="p-3">
                     <p class="small text-muted mb-1">Feb 2024 – May 2024</p>
-                    <h3 class="h5 fw-semibold mb-2">Transactional Banking System</h3>
-                    <p class="text-muted mb-3">
+                    <h3 class="h5 fw-semibold mb-2" data-i18n="project.banking.title">Transactional Banking System</h3>
+                    <p class="text-muted mb-3" data-i18n="project.banking.desc">
                       Sistema bancario en Java Spring Boot con Oracle SQL y MongoDB, CRUD completo,
-                      reglas de negocio y concurrencia (aislamientos y anomalías). Incluye manejo de transacciones, 
+                      reglas de negocio y concurrencia (aislamientos y anomalías). Incluye manejo de transacciones,
                       y simulación de operaciones financieras en un entorno distribuido.
                     </p>
                     <div class="d-flex flex-wrap gap-2">
@@ -359,20 +408,20 @@
   <section id="contacto" class="section-pad section-soft">
     <div class="container">
       <div class="text-center mb-4">
-        <h2 class="fw-bold mb-2">Contacto</h2>
-        <p class="text-muted mb-0">  </p>
+        <h2 class="fw-bold mb-2" data-i18n="contact.title">Contacto</h2>
+        <p class="text-muted mb-0"></p>
       </div>
 
       <div class="contact-card mx-auto reveal">
         <div class="row g-3 align-items-center">
           <div class="col-12 col-md">
             <p class="mb-1 fw-semibold">Guillermo Hernández</p>
-            <p class="mb-0 text-muted small">guillermoj.heres@gmail.com · Bogotá, CO</p>
+            <p class="mb-0 text-muted small"><span id="contactEmail" data-b64="Z3VpbGxlcm1vai5oZXJlc0BnbWFpbC5jb20="></span> · Bogotá, CO</p>
           </div>
 
           <div class="col-12 col-md-auto d-flex flex-wrap gap-2 justify-content-md-end">
-            <a class="btn btn-dark" href="mailto:guillermoj.heres@gmail.com?subject=Contacto%20desde%20portafolio">
-              <i class="bi bi-envelope me-2"></i>Enviar email
+            <a class="btn btn-dark" id="emailBtn" href="#">
+              <i class="bi bi-envelope me-2"></i><span data-i18n="contact.email-btn">Enviar email</span>
             </a>
             <a class="btn btn-outline-dark" href="https://www.linkedin.com/in/guillermoj-heres/" target="_blank" rel="noopener">
               <i class="bi bi-linkedin me-2"></i>LinkedIn
